@@ -10,13 +10,23 @@ const allCountriesHtml=countries.map(country=>getCountriesHtml(country))
 const container=document.getElementById('countries');
 container.innerHTML=allCountriesHtml.join('');
 }
+// option-1
 const getCountriesHtml=country=>{
+    const {name,flags}=country;
     return `
 <div class="country">
-    <h2>${country.name.common}</h2>
-    <img src="${country.flags.png}">
+    <h2>${name.common}</h2>
+    <img src="${flags.png}">
 </div>
 
     `
+// const getCountriesHtml=country=>{
+//     return `
+// <div class="country">
+//     <h2>${country.name.common}</h2>
+//     <img src="${country.flags.png}">
+// </div>
+
+//     `
 }
 loadCountries();
