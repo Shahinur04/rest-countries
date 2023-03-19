@@ -1,10 +1,14 @@
 .country{
+    
+    width: 25%;
     border: 2px solid rgb(19, 119, 96);
     background-color: aquamarine;
     border-radius: 20px;
     padding: 20px;
 }
-.country img{
-    width: 50%;
-    height: 50%;
+#countries{
+    display: -ms-grid;
+}
+.container{
+   display: flexbox;
 }
