@@ -11,15 +11,28 @@ const container=document.getElementById('countries');
 container.innerHTML=allCountriesHtml.join('');
 }
 // option-1
-const getCountriesHtml=country=>{
-    const {name,flags}=country;
+// const getCountriesHtml=country=>{
+//     const {name,flags}=country;
+//     return `
+// <div class="country">
+//     <h2>${name.common}</h2>
+//     <img src="${flags.png}">
+// </div>
+
+//     `
+// option 2
+const getCountriesHtml=({name,flags,area})=>{
+   
     return `
 <div class="country">
     <h2>${name.common}</h2>
+    <p>area:${area}</p>
     <img src="${flags.png}">
 </div>
 
     `
+    // original
+
 // const getCountriesHtml=country=>{
 //     return `
 // <div class="country">
