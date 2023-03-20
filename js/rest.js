@@ -45,3 +45,7 @@ const getCountriesHtml=({name,flags,area,continents})=>{
 //     `
 }
 loadCountries();
+
+// let ul = `<li>Programming<li>`; 
+// ul += `<li>Hero<li>`; 
+// console.log(ul);

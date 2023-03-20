@@ -1,6 +1,6 @@
 .country{
     
-    width: 25%;
+   
     border: 2px solid rgb(19, 119, 96);
     background-color: aquamarine;
     border-radius: 20px;
@@ -9,6 +9,8 @@
 #countries{
     display: -ms-grid;
 }
-.container{
-   display: flexbox;
+.countries{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 15px;
 }
